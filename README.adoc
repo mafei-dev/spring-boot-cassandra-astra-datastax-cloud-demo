@@ -1,8 +1,8 @@
-= how to configure and use https://astra.datastax.com/[astra-datastax cloud] cassandra database with spring boot with spring-boot-starter-data-cassandra.
+= how to configure and use https://astra.datastax.com/[astra-datastax cloud ] cassandra database with spring boot with spring-boot-starter-data-cassandra.
 
 Steps
 
-. Login or create your account on [https://accounts.datastax.com/session-service/v1/login](datastax cloud)
+. Login or create your account on https://accounts.datastax.com/session-service/v1/login[datastax cloud]
 
 . Create the Database
 +
