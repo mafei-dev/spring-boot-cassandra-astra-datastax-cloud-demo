@@ -1,0 +1,43 @@
+= how to configure and use https://astra.datastax.com/[astra-datastax cloud cassandra database] with spring boot with spring-boot-starter-data-cassandra.
+
+Steps
+
+. Login or create your account on [https://accounts.datastax.com/session-service/v1/login](datastax cloud)
+
+. Create the Database
++
+image::img/image-2024-09-14-16-10-11-677.png[]
+
+. Download the zip file (SCB)
++
+
+For demonstration purpose, the file is downloaded to the `resources` folder.
++
+image::img/image-2024-09-14-16-12-23-389.png[]
++
+image::img/image-2024-09-14-16-14-46-112.png[]
+
+
+. Generate a token with necessary permissions and copy the `clientId` and `secret` for adding to the properties file. The client-id acts as the `username` and the secret acts as the `password`.
++
+image::img/image-2024-09-14-16-16-27-658.png[]
+
++
+
+image::img/image-2024-09-14-16-19-47-543.png[]
+
+. Configure the xref:src/main/resources/application.yaml[application.yaml] file with collected data.
+
++
+
+[source,yaml]
+----
+include::src/main/resources/application.yaml[]
+----
+
+. Run the application and test the session by invoking the `test` endpoint.
+
+[source,shell]
+----
+curl --location 'http://localhost:8080/test'
+----

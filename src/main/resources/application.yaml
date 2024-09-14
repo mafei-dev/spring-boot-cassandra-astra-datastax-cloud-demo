@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-boot-cassandra-astra-datastax-cloud-demo
+
+cassandra:
+  cloud-secure-connect-bundle: <classpath:cloud-secure-connect-bundle.zip>
+  keyspace: <default_keyspace>
+  client-id: <client-id>
+  secret: <secret>
