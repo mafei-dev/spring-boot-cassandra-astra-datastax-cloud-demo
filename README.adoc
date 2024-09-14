@@ -30,9 +30,9 @@ image::img/image-2024-09-14-16-19-47-543.png[]
 
 +
 
-[source,yaml]
+[source]
 ----
-include::src/main/resources/application.yaml[]
+include::src/main/resources/application.yaml[source,yaml]
 ----
 
 . Run the application and test the session by invoking the `test` endpoint.
