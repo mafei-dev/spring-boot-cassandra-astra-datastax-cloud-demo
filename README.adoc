@@ -30,9 +30,17 @@ image::img/image-2024-09-14-16-19-47-543.png[]
 
 +
 
-[source]
+[source,yaml]
 ----
-include::src/main/resources/application.yaml[source,yaml]
+spring:
+  application:
+    name: spring-boot-cassandra-astra-datastax-cloud-demo
+
+cassandra:
+  cloud-secure-connect-bundle: <classpath:cloud-secure-connect-bundle.zip>
+  keyspace: <default_keyspace>
+  client-id: <client-id>
+  secret: <secret>
 ----
 
 . Run the application and test the session by invoking the `test` endpoint.
